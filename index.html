@@ -1,0 +1,76 @@
+<!--HTML-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!--Fontawesome Stylesheet (for save and delete buttons.)-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!--More fonts (for Open Sans)-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Weather Deshboard</title>
+  </head>
+  <!--BEGIN HEADER-->
+  <header class = "header">
+    <h1>Weather Dashboard</h1>
+  </header>
+  <!--END HEADER-->
+
+  <!--BEGIN BODY-->
+  <body>
+    <!--Search area-->
+    <div class = row>
+    <!--Container for search input and button-->
+    <div class = "col-md-8 column search">
+      <div class = "search-area">
+        <h2>Search for a City:</h2>
+        <input id = "searchText" class = "input" type = "text" placeholder="Enter a City"></input>
+        <button id = "searchBtn" class = "button" type = "submit">Search</button>
+      </div>
+    <!--Container for recent searches. Will be added in via javascript as disabled buttons-->
+      <div class = "recent-searches">
+        <h3>Recent Searches:</h3>
+      </div>
+    </div>
+    <!--Container for Weather Info-->
+    <div class = "col-md-8 column">
+    <!--Gives Current Conditions-->
+      <div class = "row">
+      <div class = "col-md-8 column weather-info">
+        <p>Today's Info</p>
+      </div>
+      </div>
+    <!--Gives 5-Day Forecast-->
+       <div class = "row">
+        <div class = "col-md-8 column five-day">
+        <p>5-Day Forecast:</p>
+        </div>
+      </div>
+    </div>
+    </div> 
+
+    <!--SCRIPTS-->
+    <!--moment.js API library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.31/moment-timezone-with-data-10-year-range.js"></script>
+    <!--Internal script-->
+    <script src = "./assets/js/script.js"></script>
+
+    <!--END BODY-->
+  </body>
+</html>
