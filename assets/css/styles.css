@@ -1,0 +1,82 @@
+/* STYLE SHEET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  :root {
+    --primaryBorder: #1b1d1d;
+    --secondaryBorder: #9fd9ff;
+    --buttonPrimary: #185f92;
+    --buttonSecondary: #414e57;
+    --infobox: #323ccc;
+    --textLight: rgb(227, 252, 255);
+  }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 5px solid var(--primaryBorder);
+}
+
+header {
+    background-image: linear-gradient(to right, blue, navy);
+    color: var(--textLight);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--secondaryBorder);
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.column h2 {
+    text-align: center;
+}
+
+.search {
+    border-right: 2px solid var(--primaryBorder);
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.input {
+    border: 2px solid var(--primaryBorder);
+}
+
+.buttonClick {
+    border: 2px solid var(--secondaryBorder);
+    background-color: var(--buttonPrimary);
+    color: var(--textLight);
+    padding: 3px;
+    border-radius: 3px;
+}
+
+/* Taken from https://stackoverflow.com/questions/38941074/how-can-i-ensure-a-bootstrap-column-expands-to-fit-the-width-of-its-content-when */
+.flex {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.search-area {
+    margin: 5px;
+    padding-bottom: 5px;
+}
+
+.recent-searches {
+    border-top: 3px dotted var(--primaryBorder);
+    margin: 5px;
+    padding-top: 5px;
+}
+
+.info-display {
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+}
+
+

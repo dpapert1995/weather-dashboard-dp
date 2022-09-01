@@ -22,7 +22,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>Weather Deshboard</title>
   </head>
   <!--BEGIN HEADER-->
@@ -36,30 +36,26 @@
     <!--Search area-->
     <div class = row>
     <!--Container for search input and button-->
-    <div class = "col-md-8 column search">
+    <div class = "col-6-md column search">
       <div class = "search-area">
         <h2>Search for a City:</h2>
         <input id = "searchText" class = "input" type = "text" placeholder="Enter a City"></input>
-        <button id = "searchBtn" class = "button" type = "submit">Search</button>
+        <button id = "searchBtn" class = "buttonClick" type = "submit">Search</button>
       </div>
     <!--Container for recent searches. Will be added in via javascript as disabled buttons-->
       <div class = "recent-searches">
-        <h3>Recent Searches:</h3>
+        <h2>Recent Searches:</h2>
       </div>
     </div>
     <!--Container for Weather Info-->
-    <div class = "col-md-8 column">
+    <div class = "col-auto column info-display">
     <!--Gives Current Conditions-->
-      <div class = "row">
-      <div class = "col-md-8 column weather-info">
-        <p>Today's Info</p>
-      </div>
+      <div class = "row flex">
+        <h2>Today's Info:</h2>
       </div>
     <!--Gives 5-Day Forecast-->
-       <div class = "row">
-        <div class = "col-md-8 column five-day">
-        <p>5-Day Forecast:</p>
-        </div>
+       <div class = "row flex">
+        <h2>5-Day Forecast:</h2>
       </div>
     </div>
     </div> 
