@@ -20,6 +20,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     border: 5px solid var(--primaryBorder);
 }
+
+h2 {
+    text-align: center;
+}
 /* End General Styles */
 
 /* Begin Header Styles */
@@ -32,11 +36,9 @@ header {
     border: 2px solid var(--secondaryBorder);
     text-align: center;
 }
+/* End Header Styles */
 
-h2 {
-    text-align: center;
-}
-
+/* Begin input and button styles */
 .search {
     border-right: 2px solid var(--primaryBorder);
     margin: 0 10px;
@@ -74,18 +76,13 @@ h2 {
     text-align: center;
 }
 
-/* Taken from https://stackoverflow.com/questions/38941074/how-can-i-ensure-a-bootstrap-column-expands-to-fit-the-width-of-its-content-when */
-.flex {
-    display: flex; 
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 .search-area {
     margin: 5px;
     padding-bottom: 5px;
 }
+/* End input and button styles */
 
+/* Begin output styles */
 .recent-searches {
     border-top: 3px dotted var(--primaryBorder);
     margin: 5px;
@@ -97,6 +94,15 @@ h2 {
     padding: 10px;
     align-items: center;
 }
+/* End output styles */
+
+/* Begin miscellaneous styles */
+/* Taken from https://stackoverflow.com/questions/38941074/how-can-i-ensure-a-bootstrap-column-expands-to-fit-the-width-of-its-content-when */
+.flex {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .hide {
     display: none;
@@ -104,6 +110,20 @@ h2 {
 
 .show {
     display: all;
+}
+/* End miscellaneous styles */
+
+/* Begin output styles */
+.recent-searches {
+    border-top: 3px dotted var(--primaryBorder);
+    margin: 5px;
+    padding-top: 5px;
+}
+
+.info-display {
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
 }
 
 .info-list {
@@ -130,7 +150,9 @@ h2 {
     min-width: 230px;
     max-width: 230px;
 }
+/* End output styles */
 
+/* Begin footer styles */
 footer {
     background-image: linear-gradient(to right, blue, navy);
     color: var(--textLight);
@@ -140,3 +162,5 @@ footer {
     border: 2px solid var(--secondaryBorder);
     text-align: center;
 }
+/* End footer styles */
+/* END STYLE SHEET */
