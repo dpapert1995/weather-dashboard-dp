@@ -86,3 +86,28 @@ h2 {
 .show {
     display: all;
 }
+
+.info-list {
+    border: 2px solid var(--primaryBorder);
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.five-day {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.fiveDayCard {
+    border: 2px solid var(--secondaryBorder);
+    background-color: var(--infobox);
+    color: var(--textLight);
+    padding: 3px;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    min-width: 230px;
+    max-width: 230px;
+}
