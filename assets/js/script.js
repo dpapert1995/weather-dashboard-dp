@@ -30,8 +30,8 @@ $(".deleteClick").on("click", function() {
 
 // Search History Button Event Listener. On click, search for that specific city.
 $("#search-history").on("click", function() {
-    var location = event.target.id;
-    console.log(location);
+    let id = event.target.id;
+    var location = id.replace("-"," ");
     getWeather(location);
     displayHistory(storedSearches);
 });
@@ -64,8 +64,6 @@ function openCall(cityData){
 // Function to display current weather conditions
 // Since we are only storing recent searches, this information all updates when the user refreshes the page to reflect updated conditions for a search.
 function addWeather(city, weatherData) {
-
-    console.log(weatherData);
     
     // Clear previous entry for all information fields
     $("#info-header").empty();
@@ -134,7 +132,6 @@ function addWeather(city, weatherData) {
 // Function to add the search to history.
 // Conditions ensure no search is repeated in the side bar.
 function addToHistory (location) {
-    console.log(location);
     // If the search matches any previous ones in local storage, move that search to the end of the array and reorder the other elements in the array.
     if (storedSearches.includes(location)){
         storedSearches.splice(storedSearches.indexOf(location),1);
@@ -145,7 +142,6 @@ function addToHistory (location) {
         storedSearches.push(location);
     }
     localStorage.setItem("searchHistory", JSON.stringify(storedSearches));
-    console.log(localStorage.getItem("searchHistory"));
     displayHistory(storedSearches);
 }
 
@@ -153,6 +149,8 @@ function addToHistory (location) {
 function displayHistory (storedSearches) {
 $("#search-history").empty();
 for (i = storedSearches.length-1; i > -1; i--){
-      $("#search-history").append(`<button id = ${storedSearches[i]} class= "searchClick" type = "submit"">${storedSearches[i]}</button>`)
+    // Replaces white space to properly fill element id.
+    let temp = storedSearches[i].replace(/\s+/g, "-")
+      $("#search-history").append(`<button id = "${temp}" class= "searchClick" type = "submit"">${storedSearches[i]}</button>`)
     }
 }
