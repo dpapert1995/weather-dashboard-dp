@@ -1,4 +1,4 @@
-# Work Day Scheduler Starter Code
+# Weather Dashboard
 
 ## Purpose
 This application allows you to search both current weather conditions
